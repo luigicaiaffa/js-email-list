@@ -5,7 +5,7 @@ const generateRandomMails = (mailNum) => {
       .then((response) => response.json())
       .then((data) => {
         mailList.innerHTML += `<li class="list-group-item list-group-item-success">${data.response}</li>`;
-        console.log(data.response);
+        // console.log(data.response);
       });
   }
 };
@@ -20,5 +20,5 @@ generateRandomMails(10);
 // # Bonus
 changeMailsBtn.addEventListener("click", () => {
   mailList.innerHTML = "";
-  generateRandomMails(10)
+  generateRandomMails(10);
 });
