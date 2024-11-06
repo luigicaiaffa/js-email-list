@@ -5,7 +5,7 @@ const generateRandomMails = (mailNum) => {
     fetch("https://flynn.boolean.careers/exercises/api/random/mail")
       .then((response) => response.json())
       .then((data) => {
-        mailList.innerHTML += `<li class="list-group-item list-group-item-success">${data.response}</li>`;
+        mailList.innerHTML += `<li class="list-group-item list-group-item-dark">${data.response}</li>`;
         console.log(data.response);
       });
   }
