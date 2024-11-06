@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Mail List</title>
 
     <!-- | BOOTSTRAP | -->
     <link
@@ -26,9 +26,17 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
-  <body>
+  <body class="bg-dark">
     <div class="container">
-      <ul id="mail-list"></ul>
+      <div class="card my-5 text-bg-light text-center">
+        <div class="card-header h2 fw-bold">Generate Random Mails</div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush rounded mx-4" id="mail-list"></ul>
+        </div>
+        <div class="card-footer">
+          <a href="#" class="btn btn-success" id="change-mails-btn">Change Mails</a>
+        </div>
+      </div>
     </div>
     <!-- | BOOTSTRAP JS |  -->
     <!-- <script
